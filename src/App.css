@@ -76,6 +76,20 @@ body {
   font-family: var(--ff-base);
 }
 
+button {
+  cursor: pointer;
+  text-decoration: none;
+  background-color: transparent;
+  border: 1px solid var(--clr-bone);
+  color: var(--clr-bone);
+  font-family: var(--ff-accent);
+}
+
+button:is(:hover, :active) {
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
 .hero-container {
   position: relative;
   text-align: center;
@@ -134,33 +148,62 @@ body {
 }
 
 .hero-titles button {
-  text-decoration: none;
-  cursor: pointer;
   font-size: 3vmin;
 
   margin-top: 20vh;
-
-  background-color: transparent;
-  border: 1px solid var(--clr-bone);
-  color: var(--clr-bone);
 }
 
-.hero-titles button:is(:hover, :focus) {
-  opacity: 0.3;
-  transition: 0.3s;
-}
+
 
 .invitation-details {
-  margin-top: 0;
   padding: 3vmin;
   padding-top: 3vh;
   height: 100vh;
+
 }
 
 .invitation-details-opening {
   color: var(--clr-ivory);
   font-weight: var(--fw-500);
   font-size: 0.75em;
+}
 
+.invitation-details-place {
+  margin-top: 3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.invitation-details-place h2 {
+  font-family: var(--ff-accent);
+  font-weight: var(--fw-600);
+  color: var(--clr-bone);
+  font-size: 2.5em;
+}
+
+.invitation-details-place p {
+  font-weight: var(--fw-400);
+  color: var(--clr-ivory);
+  font-size: 0.9em;
+  padding: 1em;
+}
+
+.invitation-details-place button {
+  font-size: 1em;
+}
+
+.invitation-details-icon {
+  width: 1vw;
+  height: 40vh;
+  background: linear-gradient(to bottom, rgba(0 0 0 / 0.8), var(--clr-highland));
+  border-radius: 0.25rem;
+  margin: 0 auto;
+  margin-top: 2vh;
+}
+
+.invitation-details-date {
+  margin-top: 1.5vh;
 }
 
