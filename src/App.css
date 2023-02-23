@@ -74,6 +74,7 @@
 body {
   background: var(--clr-outerSpace);
   font-family: var(--ff-base);
+
 }
 
 button {
@@ -90,14 +91,14 @@ button:is(:hover, :active) {
   transition: 0.2s;
 }
 
-.hero-container {
+.hero {
   position: relative;
   text-align: center;
   
   height: 100vh;
 }
 
-.hero-container::after {
+.hero::after {
   content:"";
   position: absolute;
   top: 0px;
@@ -164,13 +165,13 @@ button:is(:hover, :active) {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: auto;
 }
 
 .invitation-details-opening {
   color: var(--clr-ivory);
   font-weight: var(--fw-500);
   font-size: 0.75em;
+  text-align: center;
 }
 
 .invitation-details-place {
@@ -179,6 +180,8 @@ button:is(:hover, :active) {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+
+  text-align: center;
 }
 
 .invitation-details-place h2 {
@@ -203,13 +206,19 @@ button:is(:hover, :active) {
   content: "";
   width: 80vw;
   height: 0.2vh;
-  background: linear-gradient(to right, rgba(0 0 0 / 0.4), var(--clr-highland) 50%, rgba(0 0 0 / 0.4));
+  background: var(--clr-ivory);
   margin-top: 10vh;
   border-radius: 0.25rem;
 }
 
 .invitation-details-date {
   margin-top: 1.5vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+
+  text-align: center;
 }
 
 .invitation-details-date h2 {
