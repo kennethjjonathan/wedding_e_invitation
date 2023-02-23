@@ -160,6 +160,11 @@ button:is(:hover, :active) {
   padding-top: 3vh;
   height: 100vh;
 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: auto;
 }
 
 .invitation-details-opening {
@@ -194,6 +199,15 @@ button:is(:hover, :active) {
   font-size: 1em;
 }
 
+.invitation-details-place::after {
+  content: "";
+  width: 80vw;
+  height: 0.2vh;
+  background: linear-gradient(to right, rgba(0 0 0 / 0.4), var(--clr-highland) 50%, rgba(0 0 0 / 0.4));
+  margin-top: 10vh;
+  border-radius: 0.25rem;
+}
+
 .invitation-details-icon {
   width: 1vw;
   height: 40vh;
@@ -205,5 +219,16 @@ button:is(:hover, :active) {
 
 .invitation-details-date {
   margin-top: 1.5vh;
+}
+
+.invitation-details-date h2 {
+  font-family: var(--ff-accent);
+  color: var(--clr-bone);
+  font-size: 1.8em;
+}
+
+.invitation-details-date h3 {
+  color: var(--clr-ivory);
+  font-size: 1em;
 }
 
