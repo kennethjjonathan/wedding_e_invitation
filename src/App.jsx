@@ -38,9 +38,9 @@ function App() {
           <h3>Reception Ceremony at: 17:30-19:30</h3>
         </div>
       </section>
-      <div>
-        
-      </div>
+      <section className='forms'>
+        <h2 className="forms-titles">RSVPs and Wishes</h2>
+      </section>
     </div>
   )
 }

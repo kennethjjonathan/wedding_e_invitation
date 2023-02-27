@@ -91,6 +91,10 @@ button:is(:hover, :active) {
   transition: 0.2s;
 }
 
+section {
+  height: 100vh;
+}
+
 .hero {
   position: relative;
   text-align: center;
