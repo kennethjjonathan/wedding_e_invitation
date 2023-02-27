@@ -40,7 +40,23 @@ function App() {
       </section>
       <section className='forms'>
         <h2 className="forms-titles">RSVPs and Wishes</h2>
-        
+        <form>
+          <label>
+            Full Name
+          </label>
+          <input type="text" required placeholder="Please enter your full name..." />
+          <label>
+            Would you attend?
+          </label>
+          <select required>
+            <option value="Yes">Yes, I would</option>
+            <option value="No">No, I wouldn't</option>
+          </select>
+          <label>
+            Wishes
+          </label>
+          <input type="textarea" placeholder='Please enter your wishes...' />
+        </form>
       </section>
       <section className="work-in-progress">
         <h1>STILL IN PROGRESS...</h1>
