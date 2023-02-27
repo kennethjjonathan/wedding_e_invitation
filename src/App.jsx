@@ -40,6 +40,10 @@ function App() {
       </section>
       <section className='forms'>
         <h2 className="forms-titles">RSVPs and Wishes</h2>
+        
+      </section>
+      <section className="work-in-progress">
+        <h1>STILL IN PROGRESS...</h1>
       </section>
     </div>
   )

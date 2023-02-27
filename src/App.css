@@ -95,6 +95,15 @@ section {
   height: 100vh;
 }
 
+.work-in-progress {
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
   text-align: center;
@@ -116,7 +125,6 @@ section {
   opacity: 0.7;
   z-index: 3;
 }
-
 
 .hero-titles {
   display: flex;
@@ -157,9 +165,9 @@ section {
 
   margin-top: 20vh;
 }
+/* Hero Section -ending*/
 
-
-
+/* invitation-details */
 .invitation-details {
   padding: 3vmin;
   padding-top: 3vh;
@@ -235,4 +243,6 @@ section {
   color: var(--clr-ivory);
   font-size: 1em;
 }
+/* invitation-details -ending*/
 
+/* forms */
