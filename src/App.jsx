@@ -39,23 +39,31 @@ function App() {
         </div>
       </section>
       <section className='forms'>
-        <h2 className="forms-titles">RSVPs and Wishes</h2>
-        <form>
-          <label>
-            Full Name
-          </label>
-          <input type="text" required placeholder="Please enter your full name..." />
+        <form className='forms-container'>
+          <div className="forms-container-name">
+            <input type="text" id="name" placeholder="Dora the Explorer" required />
+            <label htmlFor="name">
+              <span>Name</span>
+            </label>
+          </div>
           <label>
             Would you attend?
-          </label>
-          <select required>
-            <option value="Yes">Yes, I would</option>
-            <option value="No">No, I wouldn't</option>
+            <select required>
+              <option value="Yes">Yes, I would</option>
+              <option value="No">No, I wouldn't</option>
           </select>
+          </label>
+          <label>
+            Number of pax:
+            <select required>
+              <option value="1">1</option>
+              <option value="2">2</option>
+          </select>
+          </label>
           <label>
             Wishes
+            <input type="textarea" placeholder='Awawwww congrats yaa...' autoComplete='off'/>
           </label>
-          <input type="textarea" placeholder='Please enter your wishes...' />
         </form>
       </section>
       <section className="work-in-progress">
