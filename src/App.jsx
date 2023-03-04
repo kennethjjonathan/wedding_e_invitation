@@ -39,31 +39,32 @@ function App() {
         </div>
       </section>
       <section className='forms'>
+        <h2 className="forms-title">RSVP</h2>
         <form className='forms-container'>
           <div className="forms-container-name">
-            <input type="text" id="name" placeholder="Dora the Explorer" required />
+            <input type="text" id="name" required />
             <label className="forms-container-name-label" htmlFor="name">
               <span className="forms-container-name-label-span">Name</span>
             </label>
           </div>
-          <label>
-            Would you attend?
-            <select required>
+          <div className="forms-select">
+            <select className="form-select-label" id="attendance" required>
               <option value="Yes">Yes, I would</option>
               <option value="No">No, I wouldn't</option>
-          </select>
-          </label>
-          <label>
-            Number of pax:
-            <select required>
+            </select>
+            <label htmlFor="attendance">Would you attend?</label>
+          </div>
+          <div className="forms-select">
+            <select className="form-select-label" id="pax" required>
               <option value="1">1</option>
               <option value="2">2</option>
-          </select>
-          </label>
-          <label>
-            Wishes
-            <input type="textarea" placeholder='Awawwww congrats yaa...' autoComplete='off'/>
-          </label>
+            </select>
+            <label htmlFor="pax">Number of pax:</label>
+          </div>
+          <div className="forms-wish">
+            <label htmlFor="wish">Wish:</label>
+            <input type="textarea" id="wish" placeholder='Awawwww congrats yaa...' autoComplete='off'/>
+          </div>
         </form>
       </section>
       <section className="work-in-progress">

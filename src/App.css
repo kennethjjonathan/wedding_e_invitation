@@ -247,22 +247,47 @@ section {
 
 /* forms */
 .forms {
-  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.forms-title {
+  font-size: 3em;
+  text-align: center;
+  font-family: var(--ff-accent);
+  color: var(--clr-bone);
+}
+
+.forms-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  width: 95%;
+  height: 90%;
 }
 
 .forms-container-name {
   position: relative;
-  height: 7vh;
+  height: 15%;
+  width: 100%;
+  overflow: hidden;
 }
 
 .forms-container-name input {
+  position: absolute;
   width: 100%;
-  height: 100%;
-  padding-top: 3vh;
+  bottom: 0%;
+  left: 0%;
   border: none;
   background: transparent;
   outline: none;
-  overflow: hidden;
+  color: var(--clr-ivory);
+  font-size: 1em;
 }
 
 .forms-container-name label {
@@ -272,7 +297,9 @@ section {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  border-bottom: 1px solid black;
+  font-size: 1em;
+  color: var(--clr-ivory);
+  border-bottom: 0.2vh solid var(--clr-bone);
 }
 
 .forms-container-name label::after {
@@ -282,14 +309,14 @@ section {
   bottom: -3%;
   height: 100%;
   width: 100%;
-  border-bottom: 3px solid blue;
+  border-bottom: 0.5vh solid var(--clr-highland);
   transform: translateX(-100%);
   transition: transform 0.3s ease;
 }
 
 .forms-container-name label span {
   position: absolute;
-  bottom: 1vh;
+  bottom: 10%;
   left: 0vw;
   transition: all 0.3s ease;
 }
@@ -298,10 +325,51 @@ section {
 .forms-container-name input:valid + .forms-container-name-label .forms-container-name-label-span {
   transform: translateY(-150%);
   font-size: 1em;
-  color: var(--clr-ivory);
+  color: var(--clr-highland);
+  bottom: 0%;
 }
 
 .forms-container-name input:focus + .forms-container-name-label::after, 
 .forms-container-name input:valid + .forms-container-name-label::after {
   transform: translateX(0%);
 }
+
+.forms-select {
+  position: relative;
+
+  width: 100%;
+  height: 10%;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  font-size: 1em;
+  color: var(--clr-ivory);
+
+  transition: all 0.3s ease;
+}
+
+.forms-select label {
+  position: absolute;
+  left: 0%;
+}
+
+.forms-select select {
+  position: absolute;
+  right: 0%;
+
+  cursor: pointer;
+  color: var(--clr-ivory);
+  border: 1px solid var(--clr-ivory);
+  background: transparent;
+  outline: none;
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.5em 0.75em;
+}
+
+.forms-select select:hover + .form-select-label {
+  color: var(--clr-highland);
+}
+
