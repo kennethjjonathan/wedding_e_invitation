@@ -42,8 +42,8 @@ function App() {
         <form className='forms-container'>
           <div className="forms-container-name">
             <input type="text" id="name" placeholder="Dora the Explorer" required />
-            <label htmlFor="name">
-              <span>Name</span>
+            <label className="forms-container-name-label" htmlFor="name">
+              <span className="forms-container-name-label-span">Name</span>
             </label>
           </div>
           <label>
