@@ -18,9 +18,9 @@ function App() {
       <section className='hero'>
         <div className='hero-titles'>
           <h2>The Wedding Of</h2>
-          <h1>SHREK</h1>
+          <h1>LEO</h1>
           <h3>&</h3>
-          <h1>FIONA</h1>
+          <h1>DESY</h1>
           <h3>22 • FEBRUARY • 2023</h3>
           <button onClick={() => scrollToSection(invitationDetails)}>View Invitation Details</button>
         </div>
@@ -48,18 +48,18 @@ function App() {
             </label>
           </div>
           <div className="forms-select">
-            <select className="form-select-label" id="attendance" required>
+            <select id="attendance" required>
               <option value="Yes">Yes, I would</option>
               <option value="No">No, I wouldn't</option>
             </select>
-            <label htmlFor="attendance">Would you attend?</label>
+            <label className="form-select-label" htmlFor="attendance">Would you attend?</label>
           </div>
           <div className="forms-select">
-            <select className="form-select-label" id="pax" required>
+            <select id="pax" required>
               <option value="1">1</option>
               <option value="2">2</option>
             </select>
-            <label htmlFor="pax">Number of pax:</label>
+            <label className="form-select-label" htmlFor="pax">Number of pax:</label>
           </div>
           <div className="forms-wish">
             <label htmlFor="wish">Wish:</label>

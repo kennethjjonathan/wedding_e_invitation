@@ -74,7 +74,6 @@
 body {
   background: var(--clr-outerSpace);
   font-family: var(--ff-base);
-
 }
 
 button {
@@ -93,6 +92,10 @@ button:is(:hover, :active) {
 
 section {
   height: 100vh;
+}
+
+h1, h2, h3 {
+  text-shadow: 2px 2px 8px rgba(0 0 0 / 0.4);
 }
 
 .work-in-progress {
@@ -162,8 +165,8 @@ section {
 
 .hero-titles button {
   font-size: 3vmin;
-
   margin-top: 20vh;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Hero Section -ending*/
 
@@ -212,6 +215,7 @@ section {
 
 .invitation-details-place button {
   font-size: 1em;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .invitation-details-place::after {
@@ -221,6 +225,7 @@ section {
   background: var(--clr-ivory);
   margin-top: 10vh;
   border-radius: 0.25rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .invitation-details-date {
@@ -345,31 +350,65 @@ section {
   justify-content: space-around;
   flex-direction: row;
   font-size: 1em;
-  color: var(--clr-ivory);
+  color: var(--clr-bone);
 
-  transition: all 0.3s ease;
+  border-bottom: 0.2vh solid var(--clr-bone);
+  overflow: hidden;
 }
 
 .forms-select label {
   position: absolute;
+  padding-top: 7.5%;
   left: 0%;
+  bottom: 0%;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.forms-select label::after {
+  content: "";
+  position: absolute;
+  left: 0%;
+  bottom: -3%;
+  width: 100%;
+  height: 100%;
+  border-bottom: 0.4vh solid var(--clr-highland);
+
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+  pointer-events: none;
 }
 
 .forms-select select {
   position: absolute;
   right: 0%;
 
+  font-size: 1em;
+
+  appearance: none;
   cursor: pointer;
   color: var(--clr-ivory);
-  border: 1px solid var(--clr-ivory);
-  background: transparent;
+  border: 1px solid var(--clr-bone);
+  background: var(--clr-outerSpace);
   outline: none;
   border-radius: 0.25rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0.5em 0.75em;
+  transition: all 0.3s ease;
 }
 
-.forms-select select:hover + .form-select-label {
+.forms-select select:focus {
+  font-size: 1em;
+  color: var(--clr-highland);
+  border: 1px solid var(--clr-highland);
+}
+
+.forms-select select:focus + .form-select-label {
   color: var(--clr-highland);
 }
 
+.forms-select select:focus + .form-select-label::after {
+  transform: translateX(0%);
+}
