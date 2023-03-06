@@ -62,8 +62,8 @@ function App() {
             <label className="form-select-label" htmlFor="pax">Number of pax:</label>
           </div>
           <div className="forms-wish">
-            <label htmlFor="wish">Wish:</label>
-            <input type="textarea" id="wish" placeholder='Awawwww congrats yaa...' autoComplete='off'/>
+            <textarea className="forms-wish-textarea" id="wish" autoComplete='off'/>
+            <label className="forms-wish-label" htmlFor="wish">Wish:</label>
           </div>
           <div>
             <input type="submit" />

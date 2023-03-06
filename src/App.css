@@ -85,7 +85,13 @@ button {
   font-family: var(--ff-accent);
 }
 
-button:is(:hover, :active) {
+button:hover {
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+button:active {
+  box-shadow: none;
   opacity: 0.3;
   transition: 0.2s;
 }
@@ -269,7 +275,7 @@ h1, h2, h3 {
 .forms-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
 
   width: 95%;
@@ -404,6 +410,7 @@ h1, h2, h3 {
   font-size: 1em;
   color: var(--clr-highland);
   border: 1px solid var(--clr-highland);
+  box-shadow: none;
 }
 
 .forms-select select:focus + .form-select-label {
@@ -412,4 +419,47 @@ h1, h2, h3 {
 
 .forms-select select:focus + .form-select-label::after {
   transform: translateX(0%);
+}
+
+.forms-wish {
+  position: relative;
+  width: 100%;
+  height: 25%;
+}
+
+.forms-wish-label {
+  position: absolute;
+  color: var(--clr-bone);
+  top: 0%;
+  left: 0%;
+  transition: all 0.3s ease;
+  pointer-events: none;
+}
+
+.forms-wish textarea {
+  position: absolute;
+  width: 100%;
+  bottom: 0%;
+  left: 0%;
+  height: 85%;
+  background: linear-gradient(to bottom, rgba(0 0 0 / 0.1), rgba(0 0 0 / 0.1)), transparent;
+  outline: none;
+  cursor: text;
+  border: none;
+  border-bottom: 0.2vh solid var(--clr-bone);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: var(--clr-ivory);
+  padding: 0.5em;
+  font-size: 0.8em;
+  transition: all 0.3s ease;
+}
+
+.forms-wish-textarea:focus {
+  border-bottom: 0.4vh solid var(--clr-highland);
+  box-shadow: none;
+
+}
+
+.forms-wish-textarea:focus + .forms-wish-label {
+  color: var(--clr-highland);
 }
