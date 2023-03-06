@@ -65,10 +65,17 @@ function App() {
             <label htmlFor="wish">Wish:</label>
             <input type="textarea" id="wish" placeholder='Awawwww congrats yaa...' autoComplete='off'/>
           </div>
+          <div>
+            <input type="submit" />
+          </div>
         </form>
       </section>
       <section className="work-in-progress">
-        <h1>STILL IN PROGRESS...</h1>
+        <h3>
+          There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only. 
+          It is the hand that evokes love, and creates a twin soul for every person in the world. 
+          Without such love, one's dreams would have no meaning.
+        </h3>
       </section>
     </div>
   )
