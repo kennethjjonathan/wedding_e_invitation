@@ -263,6 +263,8 @@ h1, h2, h3 {
   justify-content: space-evenly;
   flex-direction: column;
   padding: 1em;
+  padding-top: 3em;
+  border: 1px solid red;
 }
 
 .forms-title {
@@ -400,7 +402,6 @@ h1, h2, h3 {
   border: 1px solid var(--clr-bone);
   background: var(--clr-outerSpace);
   outline: none;
-  border-radius: 0.25rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   padding: 0.5em 1em;
   transition: all 0.3s ease;
@@ -450,8 +451,9 @@ h1, h2, h3 {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   color: var(--clr-ivory);
   padding: 0.5em;
-  font-size: 0.8em;
+  font-size: 1em;
   transition: all 0.3s ease;
+  appearance: none;
 }
 
 .forms-wish-textarea:focus {
@@ -463,3 +465,25 @@ h1, h2, h3 {
 .forms-wish-textarea:focus + .forms-wish-label {
   color: var(--clr-highland);
 }
+
+.forms-submit input {
+  outline: none;
+  border: 1px solid var(--clr-bone);
+  color: var(--clr-bone);
+  background: transparent;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.forms-submit input:hover {
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+.forms-submit input:active {
+  box-shadow: none;
+  opacity: 0.3;
+  transition: 0.2s;
+}
+
+/* forms section ending */
+

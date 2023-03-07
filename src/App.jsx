@@ -1,5 +1,4 @@
 import { useRef } from 'react'
-import reactLogo from './assets/react.svg'
 import './App.css'
 
 function App() {
@@ -48,13 +47,6 @@ function App() {
             </label>
           </div>
           <div className="forms-select">
-            <select id="attendance" required>
-              <option value="Yes">Yes, I would</option>
-              <option value="No">No, I wouldn't</option>
-            </select>
-            <label className="form-select-label" htmlFor="attendance">Would you attend?</label>
-          </div>
-          <div className="forms-select">
             <select id="pax" required>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -65,7 +57,7 @@ function App() {
             <textarea className="forms-wish-textarea" id="wish" autoComplete='off'/>
             <label className="forms-wish-label" htmlFor="wish">Wish:</label>
           </div>
-          <div>
+          <div className='forms-submit'>
             <input type="submit" />
           </div>
         </form>
