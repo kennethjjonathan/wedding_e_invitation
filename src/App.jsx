@@ -1,6 +1,8 @@
 import { useRef } from 'react'
 import './App.css'
 
+import ImageSlider from './Components/ImageSlider';
+
 function App() {
   
   const invitationDetails = useRef(null);
@@ -61,6 +63,9 @@ function App() {
             <input type="submit" />
           </div>
         </form>
+      </section>
+      <section className='gallery'>
+        <ImageSlider />
       </section>
       <section className="work-in-progress">
         <h3>

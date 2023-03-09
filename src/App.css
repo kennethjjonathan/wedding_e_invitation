@@ -142,7 +142,6 @@ h1, h2, h3 {
   flex-direction: column;
   gap: 0.5em;
 
-  font-size: 2vmax;
   font-family: var(--ff-accent);
 
   z-index: 9;
@@ -160,17 +159,17 @@ h1, h2, h3 {
 .hero-titles h1 {
     letter-spacing: 0.3rem;
     font-weight: var(--fw-600);
-    font-size: 1.7em;
+    font-size: 2.2em;
 }
 
 .hero-titles h3
 {
   letter-spacing: 0.2rem;
-  font-size: 1.75vmax;
+  font-size: 0.8em;
 }
 
 .hero-titles button {
-  font-size: 3vmin;
+  font-size: 0.9em;
   margin-top: 20vh;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -178,7 +177,7 @@ h1, h2, h3 {
 
 /* invitation-details */
 .invitation-details {
-  padding: 3vmin;
+  padding: 1em;
   padding-top: 3vh;
   height: 100vh;
 
@@ -264,7 +263,6 @@ h1, h2, h3 {
   flex-direction: column;
   padding: 1em;
   padding-top: 3em;
-  border: 1px solid red;
 }
 
 .forms-title {
