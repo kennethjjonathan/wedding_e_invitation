@@ -545,3 +545,69 @@ h1, h2, h3 {
   opacity: 1;
   transition-duration: 1s;
 }
+/*gallery ending */
+
+.mosaic {
+  border: 1px solid red;
+  padding: 0.5em;
+}
+
+.grid {
+  border: 1px solid yellow;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 0.5rem;
+}
+
+.content {
+  background: var(--clr-ivory);
+  padding: 0.5em;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content img {
+
+  top:0%;
+  left:0%;
+
+  width: 100%;
+  height: 100%;
+}
+
+.one {
+  background-image: linear-gradient(to bottom, rgba(0 0 0 / 0.1), var(--clr-outerSpace)), url("./assets/pictures/myProject.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  grid-row: span 1;
+  grid-column: span 2;
+}
+
+.two {
+  background: yellow;
+  grid-column: span 3;
+}
+
+.four {
+  grid-row: span 1;
+  grid-column: span 1;
+}
+
+.five {
+  grid-row: span 3;
+  grid-column: span 2;
+}
+
+.six {
+  grid-row: span 2;
+  grid-column: span 3;
+}

@@ -64,8 +64,27 @@ function App() {
           </div>
         </form>
       </section>
-      <section className='gallery'>
-        <ImageSlider />
+      <section className='mosaic'>
+        <div className="grid">
+          <div className='content one'>
+            
+          </div>
+          <div className='content two'>
+            <img src='https://images.unsplash.com/photo-1517456215183-9a2c3a748d0c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80' />
+          </div>
+          <div className='content three'>
+            <img src="https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" />
+          </div>
+          <div className='content four'>
+            <img src="https://images.unsplash.com/photo-1611088258928-895b1ef0e40b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+          </div>
+          <div className="content five">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" />
+          </div>
+          <div className="content six">
+            <img src="https://images.unsplash.com/photo-1583939003579-730e3918a45a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" />
+          </div>
+        </div>
       </section>
       <section className="work-in-progress">
         <h3>
