@@ -120,6 +120,7 @@ h1, h2, h3 {
   height: 100vh;
 }
 
+/*
 .hero::after {
   content:"";
   position: absolute;
@@ -133,7 +134,7 @@ h1, h2, h3 {
   background-position: center;
   opacity: 0.7;
   z-index: 3;
-}
+}*/
 
 .hero-titles {
   display: flex;
@@ -144,22 +145,18 @@ h1, h2, h3 {
 
   font-family: var(--ff-accent);
 
-  z-index: 9;
-
   color: var(--clr-bone);
 
-  height: 100vh;
-
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
 .hero-titles h1 {
-    letter-spacing: 0.3rem;
-    font-weight: var(--fw-600);
-    font-size: 2.2em;
+  letter-spacing: 0.3rem;
+  font-weight: var(--fw-600);
+  font-size: 2.2em;
 }
 
 .hero-titles h3
@@ -170,7 +167,7 @@ h1, h2, h3 {
 
 .hero-titles button {
   font-size: 0.9em;
-  margin-top: 20vh;
+  margin-top: 5em;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 /* Hero Section -ending*/
@@ -484,130 +481,82 @@ h1, h2, h3 {
 
 /* forms section ending */
 
-/* gallery section */
-.gallery {
-  position: relative;
-  padding: 0.5rem;
-}
-
-.gallery-slider {
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: fit-content;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.gallery-slider-images {
-  width: 300px;
-  height: 300px;
-  border-radius: 1rem;
-
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.left-arrow {
-  position: absolute;
-  left: 0%;
-  color: var(--clr-bone);
-  font-size: 1.5em;
-  cursor: pointer;
-  user-select: none;
-  z-index: 10;
-  filter: drop-shadow(2px 3px 5px rgba(0 0 0 / 0.8));
-}
-
-.right-arrow {
-  position: absolute;
-  right: 0%;
-  color: var(--clr-bone);
-  font-size: 1.5em;
-  cursor: pointer;
-  user-select: none;
-  z-index: 10;
-  filter: drop-shadow(2px 3px 5px rgba(0 0 0 / 0.8));
-}
-
-.inactive-slide {
-  opacity: 0;
-  transition-duration: 1s ease;
-}
-
-.active-slide {
-  opacity: 1;
-  transition-duration: 1s;
-}
-/*gallery ending */
-
+/* mosaic section */
 .mosaic {
-  border: 1px solid red;
   padding: 0.5em;
 }
 
 .grid {
-  border: 1px solid yellow;
   height: 100%;
-  margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(8, 1fr);
   grid-gap: 0.5rem;
 }
 
 .content {
-  background: var(--clr-ivory);
-  padding: 0.5em;
-
-  position: relative;
-
+  border: 0.3em solid var(--clr-ivory);
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.content img {
-
-  top:0%;
-  left:0%;
-
-  width: 100%;
-  height: 100%;
-}
-
 .one {
-  background-image: linear-gradient(to bottom, rgba(0 0 0 / 0.1), var(--clr-outerSpace)), url("./assets/pictures/myProject.jpg");
+  background-image: url("./assets/pictures/myProject.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
-  grid-row: span 1;
   grid-column: span 2;
+  grid-row: span 2;
 }
 
 .two {
-  background: yellow;
+  background-image: url("./assets/pictures/myProject.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   grid-column: span 3;
+  grid-row: span 3;
+}
+
+.three {
+  background-image: url("./assets/pictures/myProject.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .four {
-  grid-row: span 1;
+  background-image: url("./assets/pictures/myProject.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   grid-column: span 1;
+  grid-row: span 1;
 }
 
 .five {
-  grid-row: span 3;
+  background-image: url("./assets/pictures/myProject.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   grid-column: span 2;
+  grid-row: span 3;
 }
 
 .six {
-  grid-row: span 2;
+  background-image: url("./assets/pictures/myProject.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
   grid-column: span 3;
+  grid-row: span 2;
 }
