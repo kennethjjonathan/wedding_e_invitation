@@ -1,7 +1,6 @@
 import { useRef } from 'react'
 import './App.css'
-
-import ImageSlider from './Components/ImageSlider';
+import videoBG from "./assets/trimmedVideoBG.mp4"
 
 function App() {
   
@@ -17,6 +16,8 @@ function App() {
   return (
     <div>
       <section className='hero'>
+        <video src={videoBG} autoPlay loop muted className='hero-videoBG'/>
+        <div className='overlay' />
         <div className='hero-titles'>
           <h2>The Wedding Of</h2>
           <h1>LEO</h1>

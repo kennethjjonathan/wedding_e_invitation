@@ -115,9 +115,23 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
   position: relative;
-  text-align: center;
   
   height: 100vh;
+}
+
+.hero-videoBG {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0 0 0 / 0.4);
 }
 
 /*
