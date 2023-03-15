@@ -18,7 +18,7 @@ function App() {
   return (
     <div>
       <section className='hero'>
-        <video src={videoBG} autoPlay loop muted className='hero-videoBG'/>
+        <video src={videoBG} autoPlay loop muted playsInline className='hero-videoBG'/>
         <div className='overlay' />
         <div className='hero-titles'>
           <h2>The Wedding Of</h2>
