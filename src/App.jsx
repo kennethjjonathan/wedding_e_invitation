@@ -1,6 +1,8 @@
 import { useRef } from 'react'
 import './App.css'
 import videoBG from "./assets/trimmedVideoBG.mp4"
+import video1 from "./assets/video1.mp4"
+import video2 from "./assets/video2.mp4"
 
 function App() {
   
@@ -68,28 +70,22 @@ function App() {
       <section className='mosaic'>
         <div className="grid">
           <div className='content one'>
-            one
           </div>
           <div className='content two'>
-            two
           </div>
           <div className='content three'>
-            three
+            <video src={video1} autoPlay muted loop />
           </div>
           <div className='content four'>
-            four
           </div>
           <div className="content five">
-            five
           </div>
           <div className="content six">
-            six
           </div>
-          <div className="content six">
-            six
+          <div className="content seven">
           </div>
-          <div className='content one'>
-            one
+          <div className='content eight'>
+            <video src={video2} autoPlay muted loop />
           </div>
         </div>
       </section>

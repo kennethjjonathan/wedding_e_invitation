@@ -513,10 +513,12 @@ h1, h2, h3 {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .one {
-  background-image: url("./assets/pictures/myProject.jpg");
+  background-image: url("./assets/pictures/myProject1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -526,7 +528,7 @@ h1, h2, h3 {
 }
 
 .two {
-  background-image: url("./assets/pictures/myProject.jpg");
+  background-image: url("./assets/pictures/myProject6.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -536,17 +538,18 @@ h1, h2, h3 {
 }
 
 .three {
-  background-image: url("./assets/pictures/myProject.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-
   grid-column: span 2;
   grid-row: span 2;
 }
 
+.three video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .four {
-  background-image: url("./assets/pictures/myProject.jpg");
+  background-image: url("./assets/pictures/myProject4.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -556,7 +559,7 @@ h1, h2, h3 {
 }
 
 .five {
-  background-image: url("./assets/pictures/myProject.jpg");
+  background-image: url("./assets/pictures/myProject5.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -566,11 +569,32 @@ h1, h2, h3 {
 }
 
 .six {
-  background-image: url("./assets/pictures/myProject.jpg");
+  background-image: url("./assets/pictures/myProject3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 
   grid-column: span 3;
   grid-row: span 2;
+}
+
+.seven {
+  background-image: url("./assets/pictures/myProject7.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.eight {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.eight video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
