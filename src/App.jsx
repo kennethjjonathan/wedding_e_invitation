@@ -30,7 +30,7 @@ function App() {
         </div>
       </section>
       <section ref={invitationDetails} className='invitation-details'>
-        <p className="invitation-details-opening">We warmly request the pleasure of your company at:</p>
+        <p className="invitation-details-opening">We kindly request the pleasure of your company at:</p>
         <div className="invitation-details-place">
           <h2>HABITATE JAKARTA</h2>
           <p>Jl. Setia Budi Utara Raya No. 5, Kuningan, Karet Kuningan, Jakarta, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12920</p>
@@ -40,6 +40,31 @@ function App() {
           <h2>Saturday, 22 FEBRUARY 2023</h2>
           <h3>Holy Matrimony at: 15:30-16:30</h3>
           <h3>Reception Ceremony at: 17:30-19:30</h3>
+        </div>
+      </section>
+      <section className="groom-bride">
+        <h3>The Groom</h3>
+        <div className='groom-bride-container'>
+          <div className='groom-photo' />
+          <div className='groom-bride-details'>
+            <h1>LEO</h1>
+            <p>First son of</p>
+            <h3>Mr. XXX</h3>
+            <p>&</p>
+            <h3>Mrs. XXX</h3>
+          </div>
+        </div>
+        <div className='groom-bride-spacing' />
+        <h3 className='bride-title'>The Bride</h3>
+        <div className="groom-bride-container">
+          <div className='groom-bride-details'>
+            <h1>DESY</h1>
+            <p>First daughter of</p>
+            <h3>Mr. XXX</h3>
+            <p>&</p>
+            <h3>Mrs. XXX</h3>
+          </div>
+          <div className='bride-photo' />
         </div>
       </section>
       <section className='forms'>
@@ -74,7 +99,7 @@ function App() {
           <div className='content two'>
           </div>
           <div className='content three'>
-            <video src={video1} autoPlay muted loop />
+            <video src={video1} autoPlay muted loop playsInline />
           </div>
           <div className='content four'>
           </div>
@@ -85,16 +110,18 @@ function App() {
           <div className="content seven">
           </div>
           <div className='content eight'>
-            <video src={video2} autoPlay muted loop />
+            <video src={video2} autoPlay muted loop playsInline />
           </div>
         </div>
       </section>
-      <section className="work-in-progress">
+      <section className="ending">
         <h3>
-          There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only. 
+          "There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only. 
           It is the hand that evokes love, and creates a twin soul for every person in the world. 
-          Without such love, one's dreams would have no meaning.
+          Without such love, one's dreams would have no meaning."
         </h3>
+        <h3>-</h3>
+        <h3>Paulo Coelho, <i>The Alchemist</i> (New York: HARPER, 2014), 96.</h3>
       </section>
     </div>
   )
