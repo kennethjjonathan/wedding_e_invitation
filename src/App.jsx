@@ -21,7 +21,7 @@ function App() {
         <video src={videoBG} autoPlay loop muted playsInline className='hero-videoBG'/>
         <div className='overlay' />
         <div className='hero-titles'>
-          <h2>The Wedding Of</h2>
+          <h2>The Wedding of</h2>
           <h1>LEO</h1>
           <h3>&</h3>
           <h1>DESY</h1>
@@ -37,7 +37,7 @@ function App() {
           <a href="https://goo.gl/maps/GrF1xpXTWiYcBvbo7" target="_blank" rel="noopener noreferrer"><button>View in Google Maps</button></a>
         </div>
         <div className="invitation-details-date">
-          <h2>Saturday, 22 FEBRUARY 2023</h2>
+          <h2>Saturday, 22 February 2023</h2>
           <h3>Holy Matrimony at: 15:30-16:30</h3>
           <h3>Reception Ceremony at: 17:30-19:30</h3>
         </div>
@@ -69,6 +69,7 @@ function App() {
       </section>
       <section className='forms'>
         <h2 className="forms-title">RSVP</h2>
+        <p>Please fill out the form if you are available.</p>
         <form className='forms-container'>
           <div className="forms-container-name">
             <input type="text" id="name" required />
@@ -85,7 +86,7 @@ function App() {
           </div>
           <div className="forms-wish">
             <textarea className="forms-wish-textarea" id="wish" autoComplete='off'/>
-            <label className="forms-wish-label" htmlFor="wish">Wish:</label>
+            <label className="forms-wish-label" htmlFor="wish">Your wishes:</label>
           </div>
           <div className='forms-submit'>
             <input type="submit" />
@@ -115,13 +116,18 @@ function App() {
         </div>
       </section>
       <section className="ending">
-        <h3>
-          "There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only. 
-          It is the hand that evokes love, and creates a twin soul for every person in the world. 
-          Without such love, one's dreams would have no meaning."
-        </h3>
-        <h3>-</h3>
-        <h3>Paulo Coelho, <i>The Alchemist</i> (New York: HARPER, 2014), 96.</h3>
+        <div>
+          <h3>
+            "There is only that moment, and the incredible certainty that everything under the sun has been written by one hand only. 
+            It is the hand that evokes love, and creates a twin soul for every person in the world. 
+            Without such love, one's dreams would have no meaning."
+          </h3>
+          <h3>-</h3>
+          <h3>Paulo Coelho, <i>The Alchemist</i> (New York: HARPER, 2014), 96.</h3>
+        </div>
+        <div>
+          <h1 className='thank-you'>-Thank You and We'll See You There!-</h1>
+        </div>
       </section>
     </div>
   )

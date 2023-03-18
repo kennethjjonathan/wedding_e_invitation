@@ -74,6 +74,7 @@
 body {
   background: var(--clr-outerSpace);
   font-family: var(--ff-base);
+  text-align: center;
 }
 
 button {
@@ -107,7 +108,6 @@ h1, h2, h3 {
 /* Hero Section */
 .hero {
   position: relative;
-  
   height: 100vh;
 }
 
@@ -126,22 +126,6 @@ h1, h2, h3 {
   background-color: rgba(0 0 0 / 0.4);
 }
 
-/*
-.hero::after {
-  content:"";
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  background-image: linear-gradient(to bottom, rgba(0 0 0 / 0.1), var(--clr-outerSpace)), url("./assets/pictures/myProject.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  opacity: 0.7;
-  z-index: 3;
-}*/
-
 .hero-titles {
   display: flex;
   align-items: center;
@@ -150,7 +134,6 @@ h1, h2, h3 {
   gap: 0.5em;
 
   font-family: var(--ff-accent);
-
   color: var(--clr-bone);
 
   position: absolute;
@@ -340,6 +323,11 @@ h1, h2, h3 {
   padding-top: 3em;
 }
 
+.forms p {
+  color: var(--clr-ivory);
+  font-size: 0.8em;
+}
+
 .forms-title {
   font-size: 3em;
   text-align: center;
@@ -439,6 +427,7 @@ h1, h2, h3 {
 
 .forms-select label {
   position: absolute;
+  color: var(--clr-ivory);
   padding-top: 7.5%;
   left: 0%;
   bottom: 0%;
@@ -446,6 +435,7 @@ h1, h2, h3 {
   height: 100%;
   transition: all 0.3s ease;
   pointer-events: none;
+  text-align: left;
 }
 
 .forms-select label::after {
@@ -503,7 +493,7 @@ h1, h2, h3 {
 
 .forms-wish-label {
   position: absolute;
-  color: var(--clr-bone);
+  color: var(--clr-ivory);
   top: 0%;
   left: 0%;
   transition: all 0.3s ease;
@@ -515,7 +505,7 @@ h1, h2, h3 {
   width: 100%;
   bottom: 0%;
   left: 0%;
-  height: 85%;
+  height: 80%;
   background: linear-gradient(to bottom, rgba(0 0 0 / 0.1), rgba(0 0 0 / 0.1)), transparent;
   outline: none;
   cursor: text;
@@ -532,7 +522,6 @@ h1, h2, h3 {
 .forms-wish-textarea:focus {
   border-bottom: 0.4vh solid var(--clr-highland);
   box-shadow: none;
-
 }
 
 .forms-wish-textarea:focus + .forms-wish-label {
@@ -669,8 +658,9 @@ h1, h2, h3 {
 .ending {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   flex-direction: column;
+  padding: 1em;
 }
 
 .ending h3 {
@@ -678,3 +668,11 @@ h1, h2, h3 {
   color: var(--clr-ivory);
   font-family: var(--ff-accent);
 }
+
+.thank-you {
+  font-family: var(--ff-accent);
+  text-align: center;
+  color: var(--clr-bone);
+  font-size: 1.3em;
+}
+/* ending section */
