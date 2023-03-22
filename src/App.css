@@ -105,6 +105,10 @@ h1, h2, h3 {
   text-shadow: 2px 2px 8px rgba(0 0 0 / 0.4);
 }
 
+video::-webkit-media-controls-start-playback-button {
+  display:none !important;
+}
+
 /* Hero Section */
 .hero {
   position: relative;
@@ -143,13 +147,12 @@ h1, h2, h3 {
 }
 
 .hero-titles h1 {
-  letter-spacing: 0.3rem;
   font-weight: var(--fw-600);
   font-size: 2.2em;
+  letter-spacing: 0.3rem;
 }
 
-.hero-titles h3
-{
+.hero-titles h3 {
   letter-spacing: 0.2rem;
   font-size: 0.8em;
 }
@@ -254,6 +257,7 @@ h1, h2, h3 {
 .groom-bride h3 {
   color: var(--clr-ivory);
   font-family: var(--ff-accent);
+  letter-spacing: 0.2rem;
 }
 
 .groom-bride-spacing {
@@ -299,6 +303,7 @@ h1, h2, h3 {
   font-family: var(--ff-accent);
   color: var(--clr-bone);
   font-size: 2em;
+  letter-spacing: 0.2rem;
 }
 
 .groom-bride-details p {
@@ -309,6 +314,7 @@ h1, h2, h3 {
 .groom-bride-details h3 {
   color: var(--clr-bone);
   font-size: 1.3em;
+  letter-spacing: 0.1rem;
 }
 
 /* groom-bride ending */
@@ -333,6 +339,7 @@ h1, h2, h3 {
   text-align: center;
   font-family: var(--ff-accent);
   color: var(--clr-bone);
+  letter-spacing: 0.3rem;
 }
 
 .forms-container {
@@ -428,11 +435,10 @@ h1, h2, h3 {
 .forms-select label {
   position: absolute;
   color: var(--clr-ivory);
-  padding-top: 7.5%;
   left: 0%;
   bottom: 0%;
   width: 100%;
-  height: 100%;
+  height: 60%;
   transition: all 0.3s ease;
   pointer-events: none;
   text-align: left;

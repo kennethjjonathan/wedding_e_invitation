@@ -1,13 +1,13 @@
-import { useRef } from 'react'
+import { useRef } from 'react';
+import Form from './components/form';
 import './App.css'
+
 import videoBG from "./assets/trimmedVideoBG.mp4"
 import video1 from "./assets/video1.mp4"
 import video2 from "./assets/video2.mp4"
 
 function App() {
-  
   const invitationDetails = useRef(null);
-
   const scrollToSection = (ref) => {
     window.scrollTo({
       top: ref.current.offsetTop,
@@ -70,28 +70,7 @@ function App() {
       <section className='forms'>
         <h2 className="forms-title">RSVP</h2>
         <p>Please fill out the form if you are available.</p>
-        <form className='forms-container'>
-          <div className="forms-container-name">
-            <input type="text" id="name" required />
-            <label className="forms-container-name-label" htmlFor="name">
-              <span className="forms-container-name-label-span">Name</span>
-            </label>
-          </div>
-          <div className="forms-select">
-            <select id="pax" required>
-              <option value="1">1</option>
-              <option value="2">2</option>
-            </select>
-            <label className="form-select-label" htmlFor="pax">Number of pax:</label>
-          </div>
-          <div className="forms-wish">
-            <textarea className="forms-wish-textarea" id="wish" autoComplete='off'/>
-            <label className="forms-wish-label" htmlFor="wish">Your wishes:</label>
-          </div>
-          <div className='forms-submit'>
-            <input type="submit" />
-          </div>
-        </form>
+        <Form />
       </section>
       <section className='mosaic'>
         <div className="grid">
